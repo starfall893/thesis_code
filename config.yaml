@@ -1,0 +1,23 @@
+INPUT_LEN: 168
+FORECAST_LEN: 24
+HIDDEN_DIM: 32
+EPOCHS: 50
+LEARNING_RATE: 1e-3
+BATCH_SIZE: 64
+QUANTILES: [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
+CITIES: ['dallas', 'houston', 'san_angelo', 'brownsville']
+SCENARIOS: ['base', 'low', 'high']
+BATTERY_PARAMS:
+  E_max: 13.5
+  P_max: 5
+  eta_ch: 0.9
+  eta_dis: 0.9
+  c_deg: 0.0005
+  SoC_min: 0.1
+EV_PARAMS:
+  E_max: 80
+  E_min: 15
+  P_max: 7.2
+  eta_ch: 0.95
+  eta_dis: 0.95
+  c_deg: 0.0003 
